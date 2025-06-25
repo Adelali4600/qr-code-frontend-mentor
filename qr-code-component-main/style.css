@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&display=swap');
+
+:root {
+    --paragraph: 15px;
+    --slate-300: rgb(214, 226, 240);
+    --slate-500: rgb(104, 119, 141);
+    --slate-900: rgb(31, 50, 81);
+    --mobile: 375px;
+    --desktop: 1440px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 245, 220);
+}
+
+.container {
+    height: 80vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(104, 119, 141);
+    background: no-repeat linear-gradient(var(--slate-300));
+    overflow: hidden;
+}
+
+.card {
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 30px; */
+    overflow: hidden;
+    background-color: white;
+}
+
+.card .img {
+    height: 50%;
+    width: 90%;
+    padding: 1.2rem;
+    margin: 10px;
+    background: url("images/image-qr-code.png") center center /cover;
+    border-radius: 10px;
+}
+
+.card-body {
+    height: 35%;
+    width: 100%;
+}
+
+.card-body h3 {
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+.card-body p {
+    color: var(--slate-500);
+    font-size: var(--paragraph);
+    padding: 1.2em;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .container {
+        height: 100%;
+        width: 100%;
+
+    }
+}
